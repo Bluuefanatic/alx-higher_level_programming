@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 
-# Print numbers from 0 to 98 in decimal and hexadecimal using a single loop and print function
+# Print numbers from 0 to 98 in decimal and hexadecimal
 for i in range(99):
-    print("{} = {}".format(i, hex(i)), end=" ")
+    print("{} = {}".format(i, hex(i)))
