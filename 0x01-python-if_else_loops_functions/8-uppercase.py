@@ -2,7 +2,7 @@
 
 def uppercase(s):
     for char in s:
-        # Check if the character is a lowercase letter and convert to uppercase
+        # Check if the character is lowercase letter and convert to uppercase
         print(
             "{}".format(chr(ord(char) - 32)) if 97 <= ord(char) <= 122 else char,
             end=""
