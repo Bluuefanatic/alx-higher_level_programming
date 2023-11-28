@@ -3,8 +3,8 @@ import random
 
 number = random.randint(-10000, 10000)
 
-# Get the last digit of the number (considered as positive)
-last_digit = abs(number) % 10
+# Get the last digit of the number (considered as negative for negative numbers)
+last_digit = -abs(number) % 10 if number < 0 else abs(number) % 10
 
 # Determine the message based on the last digit
 message = f"Last digit of {number} is {last_digit} and is"
