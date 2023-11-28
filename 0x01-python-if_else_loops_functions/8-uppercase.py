@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def uppercase(s):
     for char in s:
         # Check if the character is a lowercase letter and convert it to upperc
