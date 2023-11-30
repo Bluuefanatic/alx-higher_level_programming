@@ -2,7 +2,7 @@
 
 from sys import argv
 
-if __name__ == "__main__":
+def main():
     num_args = len(argv) - 1  # Subtract 1 to exclude the script name
 
     print("{} argument{}{}:".format(
@@ -13,3 +13,6 @@ if __name__ == "__main__":
 
     for i, arg in enumerate(argv[1:], start=1):
         print("{}: {}".format(i, arg))
+
+if __name__ == "__main__":
+    main()
