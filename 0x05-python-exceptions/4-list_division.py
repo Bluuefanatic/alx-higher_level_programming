@@ -10,7 +10,7 @@ def list_division(my_list_1, my_list_2, list_length):
             print("out of range")
             division_result = 0
         except (ZeroDivisionError, TypeError):
-            if type(my_list_1[i]) not in (int, float) or type(my_list_2[i]) not in (int, float):
+            if not isinstance(my_list_1[i], (int, float)) or not isinstance(my_list_2[i], (int, float)):
                 print("wrong type")
             elif my_list_2[i] == 0:
                 print("division by 0")
