@@ -2,6 +2,7 @@
 
 """define a class square"""
 
+
 class Square:
     """
     This is the Square class.
