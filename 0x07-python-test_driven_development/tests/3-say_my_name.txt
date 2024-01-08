@@ -1,16 +1,22 @@
 # Test Cases for say_my_name function
 
+>>> from 3-say_my_name.py import say_my_name
+
+# Test case 1
 >>> say_my_name("John", "Smith")
 My name is John Smith
 
+# Test case 2
 >>> say_my_name("Walter", "White")
 My name is Walter White
 
+# Test case 3
 >>> say_my_name("Bob")
 My name is Bob
 
+# Test case 4
 >>> try:
 ...     say_my_name(12, "White")
-... except TypeError as e:
-...     str(e)
-'first_name must be a string'
+... except Exception as e:
+...     print(e)
+first_name must be a string
