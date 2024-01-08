@@ -3,5 +3,5 @@
 
 
 def lookup(obj):
-    """Return a list of available attributes and methods of an object."""
-    return [attr for attr in dir(obj) if not callable(getattr(obj, attr)) or attr.startswith("__")]
+    """Return a list of an object's available attributes."""
+    return (dir(obj))
