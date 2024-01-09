@@ -6,7 +6,7 @@ class Student:
     """Defines a student with first_name, last_name, and age."""
 
     def __init__(self, first_name, last_name, age):
-        """Instantiates a Student object with given first_name, last_name, and age.
+        """Instantiates object with given first_name, last_name, and age.
 
         Args:
             first_name (str): The first name of the student.
@@ -24,5 +24,5 @@ class Student:
         return serializable_dict
 
 def is_serializable(value):
-    """Check if the given value is serializable (list, dict, str, int, bool)."""
+    """Check if the given value is in serial (list, dict, str, int, bool)."""
     return isinstance(value, (list, dict, str, int, bool))
