@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Defines class Rectangle that inherits from BaseGeometry."""
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class BaseGeometry:
@@ -17,6 +16,7 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError(f"{name} must be greater than 0")
 
+
 class Rectangle(BaseGeometry):
     """Class definition for Rectangle, inherits from BaseGeometry."""
 
@@ -26,3 +26,6 @@ class Rectangle(BaseGeometry):
         self.integer_validator("height", height)
         self.__width = width
         self.__height = height
+
+# Test case
+print(issubclass(Rectangle, BaseGeometry))
