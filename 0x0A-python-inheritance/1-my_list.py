@@ -5,11 +5,9 @@ contains the MyList class
 
 
 class MyList(list):
-    """a subclass of list"""
-    def __init__(self):
-        """initializes the object"""
-        super().__init__()
+    """A custom list class that inherits from the built-in list class."""
 
     def print_sorted(self):
-        """prints the sorted list"""
-        print(sorted(self))
+        """Print the list in ascending order."""
+        sorted_list = sorted(self)
+        print(sorted_list)
