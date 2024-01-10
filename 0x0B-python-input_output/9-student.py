@@ -3,10 +3,10 @@
 
 
 class Student:
-    """Defines a student with first_name, last_name, and age."""
+    """Represent a student."""
 
     def __init__(self, first_name, last_name, age):
-        """Instantiates object with given first_name, last_name, and age.
+        """Initialize a new Student.
 
         Args:
             first_name (str): The first name of the student.
@@ -18,11 +18,5 @@ class Student:
         self.age = age
 
     def to_json(self):
-        """Retrieves a dictionary representation of a Student instance."""
-        obj_dict = self.__dict__
-        serializable_dict = {key: value for key, value in obj_dict.items() if is_serializable(value)}
-        return serializable_dict
-
-def is_serializable(value):
-    """Check if the given value is in serial (list, dict, str, int, bool)."""
-    return isinstance(value, (list, dict, str, int, bool))
+        """Get a dictionary representation of the Student."""
+        return self.__dict__
