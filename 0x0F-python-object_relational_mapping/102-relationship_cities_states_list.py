@@ -1,13 +1,16 @@
 #!/usr/bin/python3
-""" prints the State object with the name passed as argument from the database
 """
+This script lists all State objects, and corresponding City objects, from the database hbtn_0e_101_usa.
+It takes three arguments: mysql username, mysql password, and database name.
+It uses the SQLAlchemy module to connect to a MySQL server running on localhost at port 3306.
+"""
+
 import sys
 from relationship_state import Base, State
 from relationship_city import City
-from sqlalchemy import (create_engine)
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm import relationship
-
 
 if __name__ == "__main__":
     engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
