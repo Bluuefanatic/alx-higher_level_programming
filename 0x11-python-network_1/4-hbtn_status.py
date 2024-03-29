@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-Fetches https://alx-intranet.hbtn.io/status using requests package
-"""
+"""Fetches https://alx-intranet.hbtn.io/status using requests package"""
 import requests
 
 if __name__ == "__main__":
